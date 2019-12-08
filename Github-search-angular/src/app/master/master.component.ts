@@ -13,9 +13,26 @@ export class MasterComponent implements OnInit {
   userName: string;
 
   constructor(public apiservice: ApiService, private router: Router) {
-    
+    this.apiservice.getUserDetails().subscribe(users => { 
+      this.user1 =users;
+      console.log(this.user1);
+    });
+    this.apiservice.getRepos().subscribe(results => {
+      this.repos =results;
+      console.log(this.repos);
+    });
    }
-
+  
+  findUser(){
+    this.apiservice.updateUserName(this.userName);
+    this.apiservice.getUserDetails().subscribe(users => {
+      this.user1 =users;
+      console.log(this.user1);
+    });
+    this.apiservice.getRepos().subcribe(result => {
+      console.log(this.repos);
+    })
+  }
   ngOnInit() {
   }
 
