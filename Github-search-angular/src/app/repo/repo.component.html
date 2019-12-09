@@ -20,3 +20,17 @@
             <h3> {{user.login}}  's Repositories</h3>
             <small> {{user1.name}}</small>
           </div>
+          <div class="card-body">
+            <div class="row" *ngFor='let repo of Repos, let i=index'>
+              <div class="col-md-4"><!--small pipe to change date format-->
+                {{Repos[i].pushed_at| date:short:timezone}}
+              </div>
+              <div class="col-md-4">
+                 <a href="{{Repos[i].html_url}}" target="_blank"><button class="btn-outline-info">View on GitHub</button></a>
+              </div>
+            </div>
+            <br>
+          </div>
+        </div>
+    </div>
+</body>
