@@ -12,7 +12,20 @@ export class RepoComponent implements OnInit {
   repos;
   userName: string;
 
-  constructor(public apiservice: ApiService) { }
+  constructor(public apiservice: ApiService) {
+    this.apiservice.getUserdetails().subscribe(users => {
+      this.user1 =users;
+      console.log(this.user1);
+    });
+    this.apiservice.getRepos().subscribe(result => {
+      this.repos = result;
+      console.log(this.repos);
+    })
+   }
+   
+   findUser() {
+     
+   }
 
   ngOnInit() {
   }
