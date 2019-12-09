@@ -13,7 +13,7 @@ export class MasterComponent implements OnInit {
   userName: string;
 
   constructor(public apiservice: ApiService, private router: Router) {
-    this.apiservice.getUserDetails().subscribe(users => { 
+    this.apiservice.getUserdetails().subscribe(users => { 
       this.user1 =users;
       console.log(this.user1);
     });
@@ -24,12 +24,12 @@ export class MasterComponent implements OnInit {
    }
   
   findUser(){
-    this.apiservice.updateUserName(this.userName);
-    this.apiservice.getUserDetails().subscribe(users => {
+    this.apiservice.updateuserName(this.userName);
+    this.apiservice.getUserdetails().subscribe(users => {
       this.user1 =users;
       console.log(this.user1);
     });
-    this.apiservice.getRepos().subcribe(result => {
+    this.apiservice.getRepos().subscribe(result => {
       console.log(this.repos);
     })
   }
