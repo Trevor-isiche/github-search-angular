@@ -5,3 +5,9 @@
     margin: 10px;
   }
 
+  .card-header {
+    background-color: #606060;
+    text-align: center;
+    color: white;
+    border: none;
+  }
