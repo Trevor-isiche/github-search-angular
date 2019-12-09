@@ -18,3 +18,10 @@ body {
   .col-md-4 {
     text-align: center;
   }
+
+  #swara {
+    margin: auto;
+    width: 60%;
+    border: 0px solid #73AD21;
+    padding: 10px;
+}
