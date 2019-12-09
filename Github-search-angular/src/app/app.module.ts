@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { MasterComponent } from './master/master.component';
 import { ApiService } from './api-service/api.service';
 import { RepoComponent } from './repo/repo.component';
-import { RoutingComponent } from '../app/routing/routing.component';
+import { RoutingModule } from '../app/routing-module';
 import { HighlightDirective } from './highlight.directive';
 
 
@@ -25,7 +25,7 @@ import { HighlightDirective } from './highlight.directive';
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    RoutingComponent,
+    RoutingModule,
 
 
   ],
