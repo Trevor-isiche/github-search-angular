@@ -14,3 +14,9 @@
         </div>
         <br>
         <br>
+
+        <div class="card" *ngIf="user1">
+          <div class="card-header">
+            <h3> {{user.login}}  's Repositories</h3>
+            <small> {{user1.name}}</small>
+          </div>
