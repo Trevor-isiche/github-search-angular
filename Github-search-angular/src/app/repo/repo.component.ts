@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api-service/api.service';
 
 @Component({
   selector: 'app-repo',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RepoComponent implements OnInit {
 
-  constructor() { }
+  user1;
+  repos;
+  userName: string;
+
+  constructor(public apiservice: ApiService) { }
 
   ngOnInit() {
   }
