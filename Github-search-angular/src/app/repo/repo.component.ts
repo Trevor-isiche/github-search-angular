@@ -24,10 +24,15 @@ export class RepoComponent implements OnInit {
    }
    
    findUser() {
-     
-   }
+    this.apiservice.updateuserName(this.userName);
+    this.apiservice.getUserdetails().subscribe(users => {
+      this.user1 = users;
+      console.log(this.user1);
+
+   });
 
   ngOnInit() {
+  
   }
 
 }
