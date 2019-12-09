@@ -14,3 +14,7 @@ body {
     border-radius: 5px;
     margin: 2px;
   }
+
+  .col-md-4 {
+    text-align: center;
+  }
