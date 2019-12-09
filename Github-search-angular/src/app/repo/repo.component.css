@@ -7,3 +7,10 @@ body {
     /* background-color: #dddddd; */
     background-image: url('https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjynN7Ao6jmAhWt3OAKHUo3B_gQjRx6BAgBEAQ&url=https%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Fbackground%2F&psig=AOvVaw2pCiX5KOL8sMX0sY6k_OWg&ust=1575970838055985');
   }
+
+  .row {
+    padding: 6px;
+    border-bottom: 1px solid grey;
+    border-radius: 5px;
+    margin: 2px;
+  }
